@@ -237,7 +237,8 @@ function PageLayout({ children }: { children: ReactNode }) {
                 </div>
               )}
               <Content>
-                {routeMap.current.has(pathname) ? children : <NoAccess />}
+                {/* {routeMap.current.has(pathname) ? children : <NoAccess />} */}
+                {children}
               </Content>
             </div>
             {showFooter && <Footer />}

@@ -110,6 +110,7 @@ export default function MyApp({
           type="image/x-icon"
           href="https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico"
         />
+        <title>AI奇大</title>
       </Head>
       <ConfigProvider
         locale={locale}

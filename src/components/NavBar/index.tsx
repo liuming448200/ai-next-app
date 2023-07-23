@@ -73,15 +73,16 @@ function Navbar({ show }: { show: boolean }) {
   }, [role]);
 
   if (!show) {
-    return (
-      <div className={styles['fixed-settings']}>
-        <Settings
-          trigger={
-            <Button icon={<IconSettings />} type="primary" size="large" />
-          }
-        />
-      </div>
-    );
+    return null; // 不显示设置按钮
+    // return (
+    //   <div className={styles['fixed-settings']}>
+    //     <Settings
+    //       trigger={
+    //         <Button icon={<IconSettings />} type="primary" size="large" />
+    //       }
+    //     />
+    //   </div>
+    // );
   }
 
   const handleChangeRole = () => {

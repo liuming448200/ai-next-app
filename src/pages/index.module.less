@@ -1,0 +1,33 @@
+.firstPageWrapper {
+  :global(.arco-menu-selected) {
+    color: var(--color-text-2) !important;
+    font-weight: normal !important;
+    :global(.arco-menu-selected-label) {
+      background-color: transparent;
+    }
+  }
+
+  :global(.arco-divider-horizontal) {
+    margin: 0;
+  }
+
+  .categoryWrapper {
+    padding: 16px;
+    .gridResponsive {
+      .item {
+        :global(.arco-card) {
+          margin: auto;
+          .nameWrapper {
+            :global(.arco-space-item) {
+              margin-bottom: 0 !important;
+            }
+          }
+          :global(.arco-rate-inner) {
+            min-height: 24px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

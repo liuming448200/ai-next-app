@@ -3,6 +3,7 @@ import { isSSR } from '@/utils/is';
 
 import './user';
 import './message-box';
+import './navigate';
 
 if (!isSSR) {
   Mock.setup({
