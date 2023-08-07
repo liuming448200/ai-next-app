@@ -111,6 +111,13 @@ export default function MyApp({
           href="https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico"
         />
         <title>AI奇大</title>
+        <meta
+          name="keywords"
+          content="ChatGPT,AIGC,人工智能,AI绘画,AI写作,AI自媒体,AI数字人,AI知识库,AI导航"
+        ></meta>
+        <meta name="description" content="最全最好用的AI工具都在这里"></meta>
+        <meta name="author" content="AI奇大,327638359@qq.com"></meta>
+        <meta name="robots" content="index, follow"></meta>
       </Head>
       <ConfigProvider
         locale={locale}
