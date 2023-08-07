@@ -13,7 +13,7 @@ const getNavigateList = () => {
           logo: '',
           proxyFlag: false,
           rateValue: 5,
-          url: 'https://www.aiqida.com',
+          url: 'https://chat.aiqida.com',
         },
         {
           id: 2,
@@ -51,7 +51,7 @@ const getNavigateList = () => {
           logo: '',
           proxyFlag: false,
           rateValue: 5,
-          url: 'https://www.aiqida.com',
+          url: 'https://chat.aiqida.com',
         },
         {
           id: 2,

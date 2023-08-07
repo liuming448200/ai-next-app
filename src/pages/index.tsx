@@ -119,7 +119,7 @@ const Home: NextPage = () => {
             logo: '',
             proxyFlag: false,
             rateValue: 5,
-            url: 'https://www.aiqida.com',
+            url: 'https://chat.aiqida.com',
           },
           {
             id: 2,
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
             logo: '',
             proxyFlag: false,
             rateValue: 5,
-            url: 'https://www.aiqida.com',
+            url: 'https://chat.aiqida.com',
           },
           {
             id: 2,
