@@ -95,6 +95,23 @@ export default function MyApp({
     changeTheme(theme);
   }, [lang, theme]);
 
+  useEffect(() => {
+    // 创建脚本元素
+    const script = document.createElement('script');
+    script.innerHTML = `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ccd37cc938f0e386243bb49f0feb17b3";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `;
+
+    // 将脚本元素插入到文档
+    document.head.appendChild(script);
+  }, []); // 传递空数组以确保只在组件挂载时运行
+
   const contextValue = {
     lang,
     setLang,
