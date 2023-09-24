@@ -21,6 +21,7 @@ import weixin from '@/assets/weixin.jpg';
 import Image from 'next/image';
 import axios from 'axios';
 import wechat from '@/assets/wechat.jpg';
+import qun from '@/assets/qun.jpg';
 
 const Header = Layout.Header;
 const Content = Layout.Content;
@@ -292,6 +293,25 @@ const Home: NextPage = () => {
     });
   };
 
+  const communicate = () => {
+    const container = createContainer('contact-wrapper');
+    const modal = Modal.info({
+      closable: true,
+      simple: true,
+      alignCenter: false,
+      title: '入群学习交流',
+      onCancel: () => {
+        modal.close();
+        container.destroy();
+      },
+      content: <Image src={qun} />,
+      getPopupContainer: () => {
+        return container.element;
+      },
+      footer: null,
+    });
+  };
+
   return (
     <div className={styles.firstPageWrapper}>
       <Layout>
@@ -317,6 +337,9 @@ const Home: NextPage = () => {
             </MenuItem>
             <MenuItem key="2" onClick={contact}>
               联系我们
+            </MenuItem>
+            <MenuItem key="3" onClick={communicate}>
+              学习交流
             </MenuItem>
           </Menu>
         </Header>
