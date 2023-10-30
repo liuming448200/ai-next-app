@@ -21,7 +21,7 @@ import weixin from '@/assets/weixin.jpg';
 import Image from 'next/image';
 import axios from 'axios';
 import wechat from '@/assets/wechat.jpg';
-import qun4 from '@/assets/qun4.jpg';
+import qrcode from '@/assets/qrcode.png';
 
 const Header = Layout.Header;
 const Content = Layout.Content;
@@ -304,7 +304,7 @@ const Home: NextPage = () => {
         modal.close();
         container.destroy();
       },
-      content: <Image src={qun4} />,
+      content: <Image src={qrcode} />,
       getPopupContainer: () => {
         return container.element;
       },
